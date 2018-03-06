@@ -1,0 +1,95 @@
+#table{
+  background: rgb(209, 139, 71);
+  border: 1px solid black;
+  float: left;
+  margin: 10px;
+}
+
+.rotated {
+  transform: rotateX(180deg);
+}
+
+.menu-icon {
+  position: absolute;
+  top: auto!important;
+  right: 0;
+  
+  margin: 3px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+#table tr:nth-child(odd) td:nth-child(odd){
+  background: rgb(255, 206, 158);
+}
+
+#table tr:nth-child(even) td:nth-child(even){
+  background: rgb(255, 206, 158);
+}
+
+#table tr:nth-child(even) td:nth-child(odd) {
+  background: rgb(209, 139, 71);
+}
+
+#table tr:nth-child(odd) td:nth-child(even) {
+  background: rgb(209, 139, 71);
+}
+
+#table td{
+  cursor: pointer;
+  border: 1px solid gray;
+  width: 12.5%;
+  height: 12.5%;
+  text-align: center;
+}
+
+#playContainer #table .selected {
+  background: brown;
+}
+
+#playContainer #table .validMoves {
+  background: red;
+}
+
+#playContainer #table td {
+  -webkit-transition: background-color 375ms linear;
+  -moz-transition: background-color 375ms linear;
+  -o-transition: background-color 375ms linear;
+  -ms-transition: background-color 375ms linear;
+  transition: background-color 375ms linear;
+}
+
+#down{
+  position: relative;
+  left: 10px;
+  top: -17px;
+  width: 500px;
+}
+
+.down {
+  width: 12.5%;
+  font-size: 25px;
+  text-align: center;
+}
+
+#right {
+  position: relative;
+  left: 10px;
+  top: 10px;
+  height: 500px;
+}
+
+
+.right {
+  height: 12.5%;
+  font-size: 25px;
+}
+
+table{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

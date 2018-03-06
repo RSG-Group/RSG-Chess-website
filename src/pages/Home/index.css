@@ -1,0 +1,20 @@
+/* Slider styles */
+.item img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Grid styles */
+#home-grid {
+    margin: 5px;
+}
+
+.grid-col {
+    padding: 10px;
+    border: 1px solid;
+}
+
+.row-eq-height {
+    float: none;
+    display: table-cell;
+}

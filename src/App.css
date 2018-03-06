@@ -1,0 +1,12 @@
+.App {
+  height: 100%;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar a {
+  color: #9d9d9d;
+}
