@@ -1,20 +1,22 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-
-const downloadHref =
-  "https://github.com/RSG-Group/RSG-Chess-desktop/releases/download/0.0.1/installation.txt";
-
-const sourceHref =
-  "https://github.com/RSG-Group/RSG-Chess-desktop/archive/master.zip";
+import {
+  headStructure,
+  bodyStructure,
+  sourceStructure
+} from "../websiteConfig";
 
 const DownloadTable = () => (
   <Table striped responsive bordered>
     <thead>
       <tr>
-        <th>Android</th>
-        <th colSpan="2">Windows</th>
-        <th colSpan="2">Linux</th>
-        <th colSpan="2">macOS</th>
+        {headStructure.map((ev, i) => {
+          return (
+            <th key={i} colSpan={ev.colSpan}>
+              {ev.text}
+            </th>
+          );
+        })}
       </tr>
     </thead>
     <tbody>
@@ -28,32 +30,22 @@ const DownloadTable = () => (
             />
           </a>
         </td>
-        <td>
-          <a href={downloadHref}>64-bit (.exe)</a>
-        </td>
-        <td>
-          <a href={downloadHref}>64-bit (.zip)</a>
-        </td>
-        <td>
-          <a href={downloadHref}>x64</a>
-        </td>
-        <td>
-          <a href={downloadHref}>ARM v8</a>
-        </td>
-        <td>
-          <a href={downloadHref}>64-bit (.pkg)</a>
-        </td>
-        <td>
-          <a href={downloadHref}>32-bit (.pkg)</a>
-        </td>
+        {bodyStructure.map((ev, i) => {
+          return (
+            <td key={i}>
+              <a href={ev.href}>{ev.text}</a>
+            </td>
+          );
+        })}
       </tr>
       <tr>
-        <td>
-          <a href={"https://github.com/RSG-Group/RSG-Chess-mobile/archive/master.zip"}>Source (.zip)</a>
-        </td>
-        <td colSpan="6">
-          <a href={sourceHref}>Source (.zip)</a>
-        </td>
+        {sourceStructure.map((ev, i) => {
+          return (
+            <td colSpan={ev.colSpan} key={i}>
+              <a href={ev.href}>{ev.text}</a>
+            </td>
+          );
+        })}
       </tr>
     </tbody>
   </Table>
