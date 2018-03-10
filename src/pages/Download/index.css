@@ -1,0 +1,9 @@
+#download-container {
+  padding: 15px;
+}
+
+th,
+td {
+  padding: 0;
+  text-align: center;
+}

@@ -22,6 +22,9 @@ const NavbarComponent = () => (
         <Link to="/play">Play</Link>
       </Navbar.Text>
       <Navbar.Text>
+        <Link to="/download">Download</Link>
+      </Navbar.Text>
+      <Navbar.Text>
         <Link to="/docs">Docs</Link>
       </Navbar.Text>
       <Navbar.Text>

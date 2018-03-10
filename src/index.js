@@ -6,6 +6,7 @@ import App from "./App";
 import Home from "./pages/Home";
 import Play from "./pages/Play";
 import Docs from "./pages/Docs";
+import Download from "./pages/Download";
 import registerServiceWorker from "./registerServiceWorker";
 
 render(
@@ -13,6 +14,7 @@ render(
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="/play" component={Play} />
+      <Route path="/download" component={Download} />
       <Route path="/docs" component={Docs}>
         <Route path="/docs(/:project)(/:pages)" component={Docs} />
       </Route>
