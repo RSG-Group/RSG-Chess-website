@@ -1,4 +1,8 @@
 /* Slider styles */
+#home-slider {
+  background-color: rgb(55,55,55);
+}
+
 .item img {
   display: block;
   margin: 0 auto;
@@ -18,14 +22,14 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  min-height: 180px;
+  min-height: 185px;
   border-radius: 5px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
   background-clip: content-box;  
 }
 
 .grid-col:hover {
-  background-color: rgb(225, 225, 225);  
+  background-color: white;  
 }
 
 .grid-col span {
