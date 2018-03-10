@@ -3,7 +3,6 @@
 // Licensed under Apache 2.0 LICENSE
 
 import React from 'react'
-import ReactDOM from 'react-dom'
 import {
   Modal, Button, Glyphicon
 } from 'react-bootstrap'
@@ -281,11 +280,28 @@ class MainComponent extends React.Component {
               >New game /Click to select mode/</Button>
             </li>
             <li>
-              <a href="https://github.com/RSG-Group/Chess/blob/master/LICENSE" target="_blank">License</a>{`, `}
-              <a href="https://github.com/RSG-Group/Chess" target="_blank">Source code</a>; <a href="https://en.wikipedia.org/wiki/Rules_of_chess" target="_blank">Learn Chess</a>
+              <a
+                href="https://github.com/RSG-Group/Chess/blob/master/LICENSE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >License</a>{`, `}
+              <a
+                href="https://github.com/RSG-Group/Chess"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Source code</a>;
+              <a
+                href="https://en.wikipedia.org/wiki/Rules_of_chess"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Learn Chess</a>
             </li>
             <li>
-              <a href="https://github.com/RSG-Group/Chess/issues" target="_blank">Report a problem</a>{` `}
+              <a
+                href="https://github.com/RSG-Group/Chess/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Report a problem</a>{` `}
               or contact us on <i>rsg.group.here@gmail.com</i>
             </li>
           </ul>

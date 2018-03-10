@@ -308,6 +308,7 @@ King.prototype.getValidMoves = function (simulate) {
       for (var xx = x + dir; xx !== rookX; xx += dir) {
         if (game.board[y][xx]) return
         var safe = true
+        // eslint-disable-next-line
         game.board.forEach(function (ev) {
           ev.forEach(function (evv) {
             if (evv && evv.type !== 'king' && evv.color !== self.color) {

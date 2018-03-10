@@ -304,6 +304,7 @@ Game.prototype.allMoves = function () {
     for (var j = 0; j < 8; j++) {
       if (board[i][j] && board[i][j].color === activeColour) {
         var validMoves = board[i][j].getValidMoves()
+        // eslint-disable-next-line
         validMoves.forEach(function (ev) {
           allMoves.push({
             color: board[i][j].color,
