@@ -113,7 +113,7 @@ const gridInstance = () => (
                 height: "50px"
               }}
             />
-            <div class="feature-title">OpenSource</div>
+            <div class="feature-title">Open-Source</div>
             <div class="feature-description">
               All RSG Chess projects are 100% open-sourced!
             </div>

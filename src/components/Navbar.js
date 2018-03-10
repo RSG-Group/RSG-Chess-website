@@ -6,7 +6,10 @@ const NavbarComponent = () => (
   <Navbar fluid inverse collapseOnSelect staticTop>
     <Navbar.Header>
       <Navbar.Brand>
-        <Link to="/">RSG Chess</Link>
+        <Link to="/">
+          <img id="brand-icon" src="/pictures/icon.png" />
+          RSG Chess
+        </Link>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>

@@ -2,11 +2,22 @@
   height: 100%;
 }
 
+/* Navbar settings */
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
 }
 
 .navbar a {
-  color: #9d9d9d;
+  color: white;
+}
+
+#brand-icon {
+  width: 42px;
+  display: inline-block;
+}
+
+.navbar-inverse .navbar-header .navbar-brand {
+  padding: 5px;
+  color: white;
 }
