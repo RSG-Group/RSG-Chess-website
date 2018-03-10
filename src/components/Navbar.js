@@ -7,7 +7,11 @@ const NavbarComponent = () => (
     <Navbar.Header>
       <Navbar.Brand>
         <Link to="/">
-          <img id="brand-icon" src="/pictures/icon.png" />
+          <img
+            id="brand-icon"
+            src="/pictures/icon.png"
+            alt="Our icon cannot be displayed. Sorry!"
+          />
           RSG Chess
         </Link>
       </Navbar.Brand>
@@ -16,6 +20,12 @@ const NavbarComponent = () => (
     <Navbar.Collapse>
       <Navbar.Text>
         <Link to="/play">Play</Link>
+      </Navbar.Text>
+      <Navbar.Text>
+        <Link to="/docs">Docs</Link>
+      </Navbar.Text>
+      <Navbar.Text>
+        <Link to="/docs/faq">FAQs</Link>
       </Navbar.Text>
     </Navbar.Collapse>
   </Navbar>

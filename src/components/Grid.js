@@ -28,8 +28,8 @@ const gridInstance = () => (
                 fill: "rgb(145, 25, 175)"
               }}
             />
-            <div class="feature-title">Custom design</div>
-            <div class="feature-description">
+            <div className="feature-title">Custom design</div>
+            <div className="feature-description">
               Built from scratch chess apps with beautiful custom design.
             </div>
           </span>
@@ -45,8 +45,8 @@ const gridInstance = () => (
                 fill: "rgb(40, 152, 150)"
               }}
             />
-            <div class="feature-title">Multi-platform</div>
-            <div class="feature-description">
+            <div className="feature-title">Multi-platform</div>
+            <div className="feature-description">
               RSG Chess is available on Android, Windows, macOS, Linux and on the web!
             </div>
           </span>
@@ -62,8 +62,8 @@ const gridInstance = () => (
                 fill: "green"
               }}
             />
-            <div class="feature-title">Secure</div>
-            <div class="feature-description">
+            <div className="feature-title">Secure</div>
+            <div className="feature-description">
               RSG Chess is 100% secure! Confirmed by Google Play Protect
             </div>
           </span>
@@ -78,8 +78,8 @@ const gridInstance = () => (
                 height: "50px"
               }}
             />
-            <div class="feature-title">Community</div>
-            <div class="feature-description">
+            <div className="feature-title">Community</div>
+            <div className="feature-description">
               Open community for everyone on YouTube, Slack, Discord and more!
             </div>
           </span>
@@ -97,8 +97,8 @@ const gridInstance = () => (
                 fill: "rgb(180, 30, 30)"
               }}
             />
-            <div class="feature-title">API</div>
-            <div class="feature-description">
+            <div className="feature-title">API</div>
+            <div className="feature-description">
               We created special APIs that allows you to build very rich chess experience
             </div>
           </span>
@@ -113,8 +113,8 @@ const gridInstance = () => (
                 height: "50px"
               }}
             />
-            <div class="feature-title">Open-Source</div>
-            <div class="feature-description">
+            <div className="feature-title">Open-Source</div>
+            <div className="feature-description">
               All RSG Chess projects are 100% open-sourced!
             </div>
           </span>
@@ -130,8 +130,8 @@ const gridInstance = () => (
                 fill: "red"
               }}
             />
-            <div class="feature-title">AI built-in</div>
-            <div class="feature-description">
+            <div className="feature-title">AI built-in</div>
+            <div className="feature-description">
               The game has built-in AI which is improved after every release!
             </div>
           </span>
@@ -147,8 +147,8 @@ const gridInstance = () => (
                 fill: "rgb(75, 60, 140)"
               }}
             />
-            <div class="feature-title" style={{fontSize: "22px"}}>Client preferences</div>
-            <div class="feature-description" style={{fontSize: "14px"}}>
+            <div className="feature-title" style={{fontSize: "22px"}}>Client preferences</div>
+            <div className="feature-description" style={{fontSize: "14px"}}>
               The chess pieces displayed in the game are based on client's preferences.
             </div>
           </span>
@@ -166,8 +166,8 @@ const gridInstance = () => (
                 fill: "rgb(51,51,51)"
               }}
             />
-            <div class="feature-title">Well documented</div>
-            <div class="feature-description">
+            <div className="feature-title">Well documented</div>
+            <div className="feature-description">
               Rich documentation including examples, code, FAQs and more.
             </div>
           </span>
@@ -183,8 +183,8 @@ const gridInstance = () => (
                 fill: "rgb(22, 90, 170)"
               }}
             />
-            <div class="feature-title">Support</div>
-            <div class="feature-description">
+            <div className="feature-title">Support</div>
+            <div className="feature-description">
               Fast support response and helpful services.
             </div>
           </span>
@@ -199,8 +199,8 @@ const gridInstance = () => (
                 height: "50px"
               }}
             />
-            <div class="feature-title">Google Assistant</div>
-            <div class="feature-description">
+            <div className="feature-title">Google Assistant</div>
+            <div className="feature-description">
               Expect few G Assistant apps, a part of The RSG Chess Family
             </div>
           </span>
@@ -215,8 +215,8 @@ const gridInstance = () => (
                 height: "50px"
               }}
             />
-            <div class="feature-title">Fun & interesting</div>
-            <div class="feature-description">
+            <div className="feature-title">Fun & interesting</div>
+            <div className="feature-description">
               Have fun while using our Quizzes and watching our videos.
             </div>
           </span>
