@@ -12,6 +12,26 @@ import WrenchIcon from "./static/WrenchIcon";
 import GAssistantIcon from "./static/GAssistantIcon";
 import EmojiSmileIcon from "./static/EmojiSmileIcon";
 
+// NavBar structure
+export const navBarStructure = [
+  {
+    text: "Play",
+    href: "/play"
+  },
+  {
+    text: "Download",
+    href: "/download"
+  },
+  {
+    text: "Docs",
+    href: "/docs"
+  },
+  {
+    text: "FAQs",
+    href: "/docs/faq"
+  }
+];
+
 // HomeGrid structure
 export const gridStructure = [
   [
@@ -67,8 +87,7 @@ export const gridStructure = [
     {
       icon: PersonIcon,
       title: "Client preferences",
-      description:
-        "The game graphics are based on client's preferences.",
+      description: "The game graphics are based on client's preferences.",
       fillColor: "rgb(75, 60, 140)"
     }
   ],
