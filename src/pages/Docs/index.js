@@ -5,8 +5,11 @@ import _ from "lodash";
 import "./index.css";
 
 const pageMap = {
-  projects: ["core", "mobile", "desktop", "api", "faq"],
-  pages: ["index"]
+  core: ["index"],
+  mobile: ["index"],
+  desktop: ["index"],
+  api: ["index"],
+  faq: ["index"]
 };
 
 class Docs extends Component {
@@ -16,7 +19,9 @@ class Docs extends Component {
 
   RouterLink = props => {
     return props.href.match(/^(https?:)?\/\//) ? (
-      <a href={props.href} target="_blank" rel="noopener noreferrer">{props.children}</a>
+      <a href={props.href} target="_blank" rel="noopener noreferrer">
+        {props.children}
+      </a>
     ) : (
       <Link to={props.href}>{props.children}</Link>
     );
@@ -25,8 +30,8 @@ class Docs extends Component {
   fetchDocs = () => {
     const self = this;
     const { params } = this.props;
-    if (_.includes(pageMap.projects, params.project)) {
-      if (_.includes(pageMap.pages, params.page)) {
+    if (_.includes(_.keys(pageMap), params.project)) {
+      if (_.includes(pageMap[params.project], params.page)) {
         fetch(`/md/${params.project}/${params.page}.md`).then(
           self.responseProcessing
         );
