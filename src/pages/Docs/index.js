@@ -1,16 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router";
+import { docsPageMap } from "../../websiteConfig";
 import Markdown from "react-markdown";
 import _ from "lodash";
 import "./index.css";
-
-const pageMap = {
-  core: ["index"],
-  mobile: ["index"],
-  desktop: ["index"],
-  api: ["index"],
-  faq: ["index"]
-};
 
 class Docs extends Component {
   state = {
@@ -30,8 +23,8 @@ class Docs extends Component {
   fetchDocs = () => {
     const self = this;
     const { params } = this.props;
-    if (_.includes(_.keys(pageMap), params.project)) {
-      if (_.includes(pageMap[params.project], params.page)) {
+    if (_.includes(_.keys(docsPageMap), params.project)) {
+      if (_.includes(docsPageMap[params.project], params.page)) {
         fetch(`/md/${params.project}/${params.page}.md`).then(
           self.responseProcessing
         );

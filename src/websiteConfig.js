@@ -12,6 +12,15 @@ import WrenchIcon from "./static/WrenchIcon";
 import GAssistantIcon from "./static/GAssistantIcon";
 import EmojiSmileIcon from "./static/EmojiSmileIcon";
 
+// Docs pagemap
+export const docsPageMap = {
+  core: ["index"],
+  mobile: ["index"],
+  desktop: ["index"],
+  api: ["index"],
+  faq: ["index"]
+};
+
 // NavBar structure
 export const navBarStructure = [
   {
