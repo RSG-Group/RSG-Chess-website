@@ -6,6 +6,7 @@
     "classnames": "^2.2.5",
     "lodash": "^4.17.5",
     "react": "^16.2.0",
+    "react-adsense": "^0.0.4",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-icon-base": "^2.1.2",
