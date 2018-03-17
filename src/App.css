@@ -1,5 +1,5 @@
 .content {
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 135px);
 }
 
 /* Navbar styles */
@@ -25,7 +25,7 @@
 /* Footer style */
 .footer {
   position: relative;
-  height: 150px;
+  height: 135px;
   font-family: Helvetica, Arial, sans-serif;
   background: rgb(245, 245, 245);
   padding-top: 7px;
@@ -37,7 +37,6 @@
 }
 
 .footer a {
-  font-size: 20px;
   font-size: 16px;
   font-weight: 600;
   color: rgb(51, 51, 51);
@@ -53,4 +52,56 @@
 
 #footer-label a {
   color: rgb(51, 122, 183);
+}
+
+@media only screen and (max-width: 772px) {
+  .content {
+    min-height: calc(100vh - 190px);
+  }
+
+  .footer {
+    height: 190px;
+    padding-top: 5px;
+  }
+  
+  .footer .grid-col-footer {
+    padding: 1px;
+  }
+  
+  .footer a {
+    font-size: 14px;
+  }
+  
+  #footer-label {
+    width: 99%;
+  }
+}
+
+@media only screen and (max-width: 258px) {
+  .content {
+    min-height: calc(100vh - 220px);
+  }
+
+  .footer {
+    height: 220px;
+  }
+  
+  #footer-label {
+    width: 99%;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 220px) { 
+  .content {
+    min-height: calc(100vh - 245px);
+  }
+
+  .footer {
+    height: 245px;
+  }
+
+  #footer-label {
+    display: none;
+  }
 }
