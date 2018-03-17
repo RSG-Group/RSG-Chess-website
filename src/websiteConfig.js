@@ -17,56 +17,56 @@ import EmojiSmileIcon from "./static/EmojiSmileIcon";
 export const footerStructure = [
   [
     {
-      title: "Footer content",
-      href: "/"
+      title: "Chess for the web",
+      href: "/play"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "Source code",
+      href: "https://github.com/RSG-Group/Chess"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "Report a problem",
+      href: "https://github.com/RSG-Group/Chess/issues"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "Docs",
+      href: "/docs"
     }
   ],
   [
     {
-      title: "Footer content",
-      href: "/"
+      title: "RSG Chess mobile",
+      href: "https://play.google.com/store/apps/details?id=com.rsg.chess"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "We on YouTube",
+      href: "https://www.youtube.com/channel/UCt16V-UlAUgZGnTytoSIG_w"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "Join us on Slack",
+      href: "http://rsg-slack.herokuapp.com/"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "RSG Group",
+      href: "https://github.com/RSG-Group/RSG-Chess-API"
     }
   ],
   [
     {
-      title: "Footer content",
-      href: "/"
+      title: "RSG Chess desktop",
+      href: "https://github.com/RSG-Group/RSG-Chess-desktop#rsg-chess-desktop"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "RSG Chess API",
+      href: "https://github.com/RSG-Group/RSG-Chess-API"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "Chess on G Assistant",
+      href: "https://assistant.google.com/services/a/uid/000000e5de36e9b6"
     },
     {
-      title: "Footer content",
-      href: "/"
+      title: "Contact RSG",
+      href: "mailto:rsg.group.here@gmail.com"
     }
   ]
 ];
