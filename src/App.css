@@ -1,8 +1,8 @@
-.App {
-  height: 100%;
+.content {
+  min-height: calc(100vh - 150px);
 }
 
-/* Navbar settings */
+/* Navbar styles */
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
@@ -20,4 +20,37 @@
 .navbar-inverse .navbar-header .navbar-brand {
   padding: 5px;
   color: white;
+}
+
+/* Footer style */
+.footer {
+  position: relative;
+  height: 150px;
+  font-family: Helvetica, Arial, sans-serif;
+  background: rgb(245, 245, 245);
+  padding-top: 7px;
+}
+
+.footer .grid-col-footer {
+  text-align: center;
+  padding: 3px;
+}
+
+.footer a {
+  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(51, 51, 51);
+}
+
+#footer-label {
+  position: absolute;
+  width: 100%;
+  text-align: center;  
+  bottom: 0;
+  left: 0;
+}
+
+#footer-label a {
+  color: rgb(51, 122, 183);
 }

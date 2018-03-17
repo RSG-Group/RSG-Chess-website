@@ -12,6 +12,65 @@ import WrenchIcon from "./static/WrenchIcon";
 import GAssistantIcon from "./static/GAssistantIcon";
 import EmojiSmileIcon from "./static/EmojiSmileIcon";
 
+
+// Footer structure
+export const footerStructure = [
+  [
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    }
+  ],
+  [
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    }
+  ],
+  [
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    },
+    {
+      title: "Footer content",
+      href: "/"
+    }
+  ]
+];
+
 // Docs pagemap
 export const docsPageMap = {
   core: ["index"],
@@ -95,7 +154,7 @@ export const gridStructure = [
     },
     {
       icon: PersonIcon,
-      title: "Client preferences",
+      title: "User preferences",
       description: "The game graphics are based on client's preferences.",
       fillColor: "rgb(75, 60, 140)"
     }
@@ -131,7 +190,7 @@ export const gridStructure = [
 ];
 
 // Download Table structures
-export const headStructure = [
+export const downloadHeadStructure = [
   {
     colSpan: 1,
     text: "Android"
@@ -150,7 +209,7 @@ export const headStructure = [
   }
 ];
 
-export const bodyStructure = [
+export const downloadBodyStructure = [
   {
     href:
       "https://github.com/RSG-Group/RSG-Chess-desktop/releases/download/0.0.1/installation.txt",
@@ -183,7 +242,7 @@ export const bodyStructure = [
   }
 ];
 
-export const sourceStructure = [
+export const downloadSourceStructure = [
   {
     colSpan: 1,
     href: "https://github.com/RSG-Group/RSG-Chess-mobile/archive/master.zip",

@@ -1,16 +1,16 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import {
-  headStructure,
-  bodyStructure,
-  sourceStructure
+  downloadHeadStructure,
+  downloadBodyStructure,
+  downloadSourceStructure
 } from "../websiteConfig";
 
 const DownloadTable = () => (
   <Table striped responsive bordered>
     <thead>
       <tr>
-        {headStructure.map((ev, i) => {
+        {downloadHeadStructure.map((ev, i) => {
           return (
             <th key={i} colSpan={ev.colSpan}>
               {ev.text}
@@ -30,7 +30,7 @@ const DownloadTable = () => (
             />
           </a>
         </td>
-        {bodyStructure.map((ev, i) => {
+        {downloadBodyStructure.map((ev, i) => {
           return (
             <td key={i}>
               <a href={ev.href}>{ev.text}</a>
@@ -39,7 +39,7 @@ const DownloadTable = () => (
         })}
       </tr>
       <tr>
-        {sourceStructure.map((ev, i) => {
+        {downloadSourceStructure.map((ev, i) => {
           return (
             <td colSpan={ev.colSpan} key={i}>
               <a href={ev.href}>{ev.text}</a>
