@@ -1,7 +1,6 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash": "^4.17.5",
@@ -19,7 +18,7 @@
     "start": "react-scripts start",
     "now-start": "serve --single ./build",
     "build": "react-scripts build",
-    "deploy": "now && now alias",
+    "deploy": "now --public && now alias",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

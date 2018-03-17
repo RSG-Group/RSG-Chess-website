@@ -6,7 +6,7 @@ const Slider = () => (
     {[1, 2, 3, 4, 5].map(ev => (
       <Carousel.Item key={ev}>
         <img
-          src={`/pictures/slide${ev}.png`}
+          src={`https://storage.googleapis.com/rsg-chess.now.sh/slide${ev}.png`}
           alt="This promo graphic cannot be displayed."
         />
       </Carousel.Item>
