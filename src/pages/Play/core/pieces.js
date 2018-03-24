@@ -67,13 +67,14 @@ Pawn.prototype.getValidMoves = function (simulate) {
     board[colorY][figX].color !== this.color) moves.push({x: figX, y: colorY})
   }
 
+  // Check for en-passant
   for (let i = 0; i < 2; i++) {
     figX = figXArray[i]
     last = turn[length - 1]
 
     if (
-      last && last.to.x === figX && last.to.y === y && last.color !== this.color &&
-      (last.from.y === 1 || last.from.y === 6) && (y === 3 || y === 4)
+      last && last.type === 'pawn' && last.to.x === figX && last.to.y === y &&
+      last.color !== this.color && (last.from.y === 1 || last.from.y === 6) && (y === 3 || y === 4)
     ) {
       moves.push({
         x: figX,
@@ -308,7 +309,6 @@ King.prototype.getValidMoves = function (simulate) {
       for (var xx = x + dir; xx !== rookX; xx += dir) {
         if (game.board[y][xx]) return
         var safe = true
-        // eslint-disable-next-line
         game.board.forEach(function (ev) {
           ev.forEach(function (evv) {
             if (evv && evv.type !== 'king' && evv.color !== self.color) {

@@ -4,7 +4,7 @@
 
 import React from 'react'
 import {
-  Modal, Button, Glyphicon
+  Modal, Button, Glyphicon, Checkbox
 } from 'react-bootstrap'
 import _ from 'lodash'
 import classNames from 'classnames'
@@ -67,6 +67,7 @@ class MainComponent extends React.Component {
       settingsDialog: false,
       playAgainstAI: false,
       rotated: false,
+      showValidMoves: true,
       sizes: getSizes()
     }
   }
@@ -86,9 +87,7 @@ class MainComponent extends React.Component {
       welcomeDialog: true,
       checkmate: null,
       settingsDialog: false,
-      playAgainstAI: false,
-      rotated: false,
-      sizes: getSizes()
+      playAgainstAI: false
     })
     // Initialize new game
     initializeGame()
@@ -139,7 +138,7 @@ class MainComponent extends React.Component {
   }
 
   __renderTable () {
-    const { selected, rotated } = this.state
+    const { selected, rotated, showValidMoves } = this.state
     const validMoves = selected && selected.getValidMoves(true)
     return game.board.map((rank, i) => (
       <tr key={i}>
@@ -149,7 +148,7 @@ class MainComponent extends React.Component {
               onClick={this.__handleClick.bind(this, j, i)}
               className={classNames({
                 selected: selected && selected === piece,
-                validMoves: selected && _.find(validMoves, { x: j, y: i }),
+                validMoves: showValidMoves && selected && _.find(validMoves, { x: j, y: i }),
                 rotated: rotated && piece && piece.color === 'B'
               })}
             >
@@ -278,6 +277,14 @@ class MainComponent extends React.Component {
                 style={{ marginTop: '3px' }}
                 onClick={this.__handleReplay}
               >New game /Click to select mode/</Button>
+            </li>
+            <li>
+              <Checkbox
+                checked={this.state.showValidMoves}
+                onChange={() => {
+                  this.setState({showValidMoves: !this.state.showValidMoves})
+                }}
+              >Show the valid moves on the board</Checkbox>
             </li>
             <li>
               <a
