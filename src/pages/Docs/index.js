@@ -1,24 +1,15 @@
 import React, { Component } from "react";
-import { Link } from "react-router";
-import AdSense from "react-adsense";
-import { docsPageMap } from "../../websiteConfig";
 import Markdown from "react-markdown";
+import AdSense from "react-adsense";
 import _ from "lodash";
+
+import { docsPageMap } from "../../websiteConfig";
+import RouteLink from "../../components/RouteLink";
 import "./index.css";
 
 class Docs extends Component {
   state = {
     source: "## Loading..."
-  };
-
-  RouterLink = props => {
-    return props.href.match(/^(https?:)?\/\//) ? (
-      <a href={props.href} target="_blank" rel="noopener noreferrer">
-        {props.children}
-      </a>
-    ) : (
-      <Link to={props.href}>{props.children}</Link>
-    );
   };
 
   fetchDocs = () => {
@@ -73,7 +64,7 @@ class Docs extends Component {
         <Markdown
           source={this.state.source}
           escapeHtml={false}
-          renderers={{ link: this.RouterLink }}
+          renderers={{ link: RouteLink }}
         />
         {_.includes(docsPageMap[params.project], params.page) &&
           params.page !== "index" && (
