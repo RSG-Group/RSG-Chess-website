@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import { Grid, Row, Col } from "react-bootstrap";
 import { footerStructure } from "../websiteConfig";
+import RouteLink from "./RouteLink";
 
 const Footer = () => (
   <div className="footer" id="home-footer">
@@ -10,13 +11,9 @@ const Footer = () => (
         <Row key={i}>
           {ev.map((ev, i) => (
             <Col md={3} sm={3} xs={6} className="grid-col-footer" key={i}>
-              {ev.href.match(/^(https?:)?\/\//) ? (
-                <a href={ev.href} target="_blank" rel="noopener noreferrer">
-                  {ev.title}
-                </a>
-              ) : (
-                <Link to={ev.href}>{ev.title}</Link>
-              )}
+              <RouteLink href={ev.href}>
+                {ev.title}              
+              </RouteLink>
             </Col>
           ))}
         </Row>
