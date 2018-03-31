@@ -10,7 +10,7 @@ const NavbarComponent = () => (
         <Link to="/">
           <img
             id="brand-icon"
-            src="/pictures/icon.png"
+            src="https://storage.googleapis.com/rsg-chess.now.sh/icon.png"
             alt="Our icon cannot be displayed. Sorry!"
           />
           RSG Chess
