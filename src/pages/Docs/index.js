@@ -66,17 +66,23 @@ class Docs extends Component {
           escapeHtml={false}
           renderers={{ link: RouteLink }}
         />
-        {_.includes(docsPageMap[params.project], params.page) &&
-          params.page !== "index" && (
-            <AdSense.Google
-              style={{ display: "block", textAlign: "center" }}
-              client="ca-pub-3522556458609123"
-              layout="in-article"
-              slot="4737354731"
-              format="fluid"
-            />
-          )}
-      </div>
+          {_.includes(docsPageMap[params.project], params.page) &&
+            params.page !== "index" && (
+              <div style={{ height: "150px" }}>
+                <AdSense.Google
+                  style={{
+                    display: "block",
+                    textAlign: "center",
+                    height: "150px"
+                  }}
+                  client="ca-pub-3522556458609123"
+                  layout="in-article"
+                  slot="1859378092"
+                  format="fluid"
+                />
+              </div>
+            )}
+        </div>
     );
   }
 }

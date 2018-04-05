@@ -97,7 +97,7 @@ export const footerStructure = [
 // Docs pagemap
 export const docsPageMap = {
   core: ["index"],
-  mobile: ["index"],
+  mobile: ["index", "test", "palettes"],
   desktop: ["index"],
   api: ["index"],
   faq: ["index"]

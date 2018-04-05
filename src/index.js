@@ -16,7 +16,7 @@ render(
       <Route path="/play" component={Play} />
       <Route path="/download" component={Download} />
       <Route path="/docs" component={Docs}>
-        <Route path="/docs(/:project)(/:pages)" component={Docs} />
+        <Route path="/docs(/:project)(/:page)" component={Docs} />
       </Route>
     </Route>
   </Router>,
