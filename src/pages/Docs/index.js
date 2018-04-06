@@ -66,7 +66,7 @@ class Docs extends Component {
           escapeHtml={false}
           renderers={{ link: RouteLink }}
         />
-          {_.includes(docsPageMap[params.project], params.page) &&
+          {/* {_.includes(docsPageMap[params.project], params.page) &&
             params.page !== "index" && (
               <div style={{ height: "150px" }}>
                 <AdSense.Google
@@ -81,7 +81,7 @@ class Docs extends Component {
                   format="fluid"
                 />
               </div>
-            )}
+            )} */}
         </div>
     );
   }

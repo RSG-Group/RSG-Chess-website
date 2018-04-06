@@ -4,7 +4,7 @@ RSG Chess mobile is an [open-source](https://github.com/RSG-Group/RSG-Chess-mobi
 
 ### Installation & usage
 
-You can install it by with the `Install` button in the **Play store**. We also have open [testing programs](https://developer.android.com/distribute/best-practices/launch/beta-tests.html) - learn more about how to join them [here](/docs/mobile/test).
+You can install it by the `Install` button in our **Google Play** page. We also have open [testing programs](https://developer.android.com/distribute/best-practices/launch/beta-tests.html) - learn more about how to join them [here](/docs/mobile/test).
 
 The app supports all [chess rules](https://en.wikipedia.org/wiki/Rules_of_chess) and displays interactive dialogues to make everything simpler. As of RSG Chess mobile [`2.O-beta.1`](https://github.com/RSG-Group/RSG-Chess-mobile/releases/tag/2.0.0-beta.1) we support palettes for custom beautiful chess boards - learn more [here](/docs/mobile/palettes). You also can suggest more colors by submitting (feature request) issue in [our repository](https://github.com/RSG-Group/RSG-Chess-mobile/issues/new).
 
