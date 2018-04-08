@@ -99,7 +99,7 @@ export const docsPageMap = {
   core: ["index"],
   mobile: ["index", "test", "palettes"],
   desktop: ["index"],
-  api: ["index"],
+  api: ["index", "install", "cdn", "game-setup", "game", "game.piece"],
   faq: ["index"]
 };
 
