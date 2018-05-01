@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import Play from "./pages/Play";
 import Docs from "./pages/Docs";
 import Download from "./pages/Download";
-import registerServiceWorker from "./registerServiceWorker";
 
 render(
   <Router history={browserHistory}>
@@ -22,5 +21,3 @@ render(
   </Router>,
   document.querySelector("#root")
 );
-
-registerServiceWorker();
