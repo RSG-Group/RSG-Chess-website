@@ -100,7 +100,8 @@ export const docsPageMap = {
   mobile: ["index", "test", "palettes"],
   desktop: ["index"],
   api: ["index", "install", "cdn", "game-setup", "game", "game.piece"],
-  faq: ["index"]
+  faq: ["index"],
+  donate: ["index"]
 };
 
 // NavBar structure
@@ -120,6 +121,10 @@ export const navBarStructure = [
   {
     text: "FAQs",
     href: "/docs/faq"
+  },
+  {
+    text: "Donate",
+    href: "/docs/donate"
   }
 ];
 
