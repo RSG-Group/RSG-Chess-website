@@ -8,4 +8,5 @@ RSG Chess API is built from scratch open-source Javascript chess API. It is used
 - Install and set up RSG Chess API - [see docs here](/docs/api/install)
 - [CDN docs](/docs/api/cdn)
 - [Create new game setup](/docs/api/game-setup)
+- [The `Game` constructor](/docs/api/game)
 - [Piece movement](/docs/api/piece-movement)

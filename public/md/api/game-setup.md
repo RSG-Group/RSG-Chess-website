@@ -22,8 +22,6 @@ game.piece(pieceType, x, y, pieceColor)
 
 Check out the docs for `game.piece` [here](/docs/api/game.piece).
 
-<br/>
-
 > If you need standard chess configuration use `Game.prototype.initializeGame()`
 
 Example:
@@ -32,6 +30,8 @@ Example:
 var game = Game.prototype.initializeGame();
 // retruns `new Game()` with filled game.board
 ```
+
+> Once your game configuration is ready you can move the pieces around the board. Check out the [piece movement](/docs/api/piece-movement) article for more information.
 
 ## Demo
 
